@@ -8,4 +8,4 @@ Inspired from my first app on Play Store <a href="https://play.google.com/store/
 </ul>
  
 <br><br>
-<img src="https://github.com/akki777/Quotes/blob/master/Screenshots/image1.png" alt="Left Drawer" width="500" height="300"/>
+<img src="https://github.com/akki777/Quotes/blob/master/Screenshots/image1.png" alt="Left Drawer" width="480" height="280"/>
