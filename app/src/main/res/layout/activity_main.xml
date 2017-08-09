@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/quoteBackground"
+    tools:context="com.akshay.retrogson.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/quoteBackground"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.akshay.retrogson.views.TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/quotes"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:typeface="@string/indie"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <com.akshay.retrogson.views.TextView
+        android:id="@+id/tvQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="24dp"
+        android:text="@string/generate_quote"
+        android:textSize="26sp"
+        app:typeface="@string/indie"/>
+
+    <com.akshay.retrogson.views.TextView
+        android:id="@+id/tvAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvQuote"
+        android:gravity="left"
+        android:paddingRight="24dp"
+        android:text="@string/developer"
+        android:textSize="24sp"
+        app:typeface="@string/cake"/>
+
+
+</RelativeLayout>

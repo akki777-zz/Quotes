@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">RetroGson</string>
+    <string name="cake">Cake</string>
+    <string name="indie">Indie</string>
+    <string name="quotes">Quotes</string>
+    <string name="generate_quote">Click Next button to generate a Quote…</string>
+    <string name="developer">~ Developer</string>
+    <string name="next">Next</string>
+    <string name="share">Share</string>
+    <string name="app_share_text">(Shared via \'Make me Wise\', http://goo.gl/umof4I)</string>
+    <string name="finding_quotes">Finding Quotes…</string>
+    <string name="connect_to_internet">Kindly connect to Internet.</string>
+    <string name="err_occurred">Oops! Some error occurred.</string>
+</resources>
