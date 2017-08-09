@@ -22,10 +22,10 @@
             <com.akshay.retrogson.views.TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:gravity="center"
                 android:text="@string/quotes"
                 android:textColor="@android:color/white"
                 android:textSize="24sp"
-                android:gravity="center"
                 android:textStyle="bold"
                 app:typeface="@string/indie"/>
         </android.support.v7.widget.Toolbar>
@@ -38,6 +38,7 @@
         android:layout_centerInParent="true"
         android:padding="24dp"
         android:text="@string/generate_quote"
+        android:textColor="@android:color/white"
         android:textSize="26sp"
         app:typeface="@string/indie"/>
 
@@ -50,6 +51,7 @@
         android:gravity="left"
         android:paddingRight="24dp"
         android:text="@string/developer"
+        android:textColor="@android:color/white"
         android:textSize="24sp"
         app:typeface="@string/cake"/>
 
