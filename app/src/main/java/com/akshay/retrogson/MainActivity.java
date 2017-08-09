@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.WindowManager;
@@ -59,7 +60,11 @@ public class MainActivity extends AppCompatActivity {
         progress = AppUtils.showProgressDialog(MainActivity.this, getString(R.string.finding_quotes));
         lifecycle.add(RxApiUtil.build(quotesApi.getQuotes()).subscribe(quotes -> {
             tvQuote.setText(quotes.quote);
-            tvAuthor.setText(String.format(Locale.ENGLISH, "~ %s", quotes.author));
+            if (TextUtils.isEmpty(quotes.author)) {
+                tvAuthor.setText("");
+            } else {
+                tvAuthor.setText(String.format(Locale.ENGLISH, "~ %s", quotes.author));
+            }
             progress.dismiss();
         }, throwable -> {
             Logger.log(TAG, throwable);

@@ -9,7 +9,6 @@ import com.akshay.retrogson.BuildConfig;
 public class Constants {
     public interface Fonts {
         String CAKE = "Cake";
-        String CALM = "Calm";
         String INDIE = "Indie";
     }
 
